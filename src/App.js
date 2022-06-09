@@ -1,12 +1,23 @@
 import './App.css';
+import {useState} from "react";
 
 function App() {
+    const [arr, setArr] = useState([1,2,3,4,5,6,7]);
+
+    const onClick = () => {
+        setArr([1,2,4,5,6,7]);
+    };
+
   return (
     <div className="App">
       <header className="App-header">
       </header>
     <body>
-    <p>Simple table with header</p>
+    <button onClick={onClick}>ji</button>
+    <ul>
+        {arr.map((item) => <li key={item}>{item}</li>)}
+    </ul>
+    <p>Simple table with header222</p>
     <table>
         <tr>
             <th>First name</th>
