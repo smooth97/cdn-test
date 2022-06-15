@@ -6,7 +6,7 @@ function App() {
       <header className="App-header">
       </header>
     <body>
-    <h1>CDN Test</h1>
+    <h1>CDN Test 22</h1>
     <table>
         <tr>
             <th>First name</th>
